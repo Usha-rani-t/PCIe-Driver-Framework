@@ -1,0 +1,15 @@
+## Linux PCI Subsystem
+The Linux PCI Subsystem provides a framework for detecting, configuring, and managing PCIe devices. 
+It abstracts low-level PCIe operations and offers APIs that simplify driver development.
+PCI drivers interact with the subsystem rather than accessing hardware directly.
+
+PCI Driver Architecture
+User Application
+        |
+Character Device
+        |
+PCI Driver
+        |
+Linux PCI Subsystem
+        |
+PCIe Device
